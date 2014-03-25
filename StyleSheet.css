@@ -1,0 +1,31 @@
+﻿
+body {color:black;
+      background:center;
+      font-family:Gill Sans,sans-serif,Garamond
+}
+
+# { background-color:#FFE0E0;
+         width:1000px;margin:10px;
+         padding-bottom:5px;padding-left:5px;padding-right:5px;padding-top:5px;
+         border-left: solid 10px black;border-right: solid 10px black;border-top: solid 10px black;border-bottom: solid 10px black;
+}
+
+a { text-decoration:none; font-weight: bold; }
+a:link, a:visited { color: black }
+a:link  { text-decoration:underline; }	
+a:hover { background-color: #6699FF; text-decoration: underline; }
+
+#wrap {width:1240px; 
+       margin:100px 100px; 
+       border-left: solid 2px black; 
+       border-right: solid 2px black;  }
+
+#header { background:#728C00; padding:5px 10px;  }
+
+#nav { background:#E8E8E8 ; padding:5px 10px; text-align:center; }
+
+
+#GridView1 {width:auto;
+            text-align:center;
+            border-collapse:collapse;
+}

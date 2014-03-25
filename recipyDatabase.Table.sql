@@ -8,6 +8,6 @@
     [ing3] NVARCHAR(50) NULL, 
     [ing4] NVARCHAR(50) NULL, 
     [ing5] NVARCHAR(50) NULL, 
-    [prep] NVARCHAR(50) NULL, 
+    [prep] NVARCHAR(50) NOT NULL, 
     [note] NVARCHAR(MAX) NULL
 )
