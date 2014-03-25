@@ -10,16 +10,14 @@
 <body>
     <form runat="server">
     <div id="wrap" style="text-align:center">
-    <div id="header">
         <h1 class="title"> Wicked Easy Recipies </h1>
-    </div>
-    
+           <h3>Using 5 Ingedients or Less!</h3>
     <div id="nav">
-        <p>Using 5 Ingedients or Less! </p>
+       
         <br />
-            <a href="gridview.aspx">Home</a>
-            <a href="DetailsView.aspx"> New Recipy</a>
-            <a href="AboutUs.aspx"> About Us</a>
+            <a href="gridview.aspx"> Home </a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="NewRecipy.aspx"> New Recipy </a >&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="AboutUs.aspx"> About Us </a>&nbsp;&nbsp;&nbsp;
             <a href="Contact.aspx"> Contact </a>
     </div>
     <div>
@@ -57,10 +55,9 @@
         <center>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="RecipyDataSource" Width="946px" AllowSorting="True" AllowPaging="True">
             <Columns>
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="recipyName" HeaderText="Recipy Name" SortExpression="recipyName" />
                 <asp:BoundField DataField="subBy" HeaderText="Submitted By" SortExpression="subBy" />
-                <asp:HyperLinkField HeaderText="Submitted By" NavigateUrl="~/DetailsView.aspx" SortExpression="ID" Text="Select" />
+                <asp:HyperLinkField HeaderText="Submitted By" SortExpression="ID" Text="Select" DataNavigateUrlFields="ID" DataNavigateUrlFormatString="DetailsView.aspx?ID={0}" />
             </Columns>
         </asp:GridView>
       </center>

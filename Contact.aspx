@@ -8,16 +8,17 @@
             <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
 </head>
 <body> 
-    <form runat="server">
+    <form id=form1 runat="server">
     <div id="wrap" style="text-align:center">
     <div id="header">
         <h1 class="title"> Wicked Easy Recipies </h1>
+
+          <h3>Using 5 Ingedients or Less!</h3>
     </div>
     <div id="nav">
-        <p>Using 5 Ingedients or Less! </p>
         <br />
             <a href="gridview.aspx">Home</a>
-            <a href="DetailsView.aspx"> New Recipy</a>
+            <a href="NewRecipy.aspx"> New Recipy</a>
             <a href="AboutUs.aspx"> About Us</a>
             <a href="Contact.aspx"> Contact </a>
     </div>
