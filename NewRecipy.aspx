@@ -74,7 +74,7 @@
        
     </div>
        <div id="footer">
-         <p> &copy; <asp:Label ID="lblCopyN" runat="server" Text=""></asp:Label>&nbsp;Yahong Ding &nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
+         <p> &copy; 2014 &nbsp;Yahong Ding &nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
 
        </div>
 

@@ -6,12 +6,15 @@ Partial Class DetailsView
 
         Dim delRecipe As String = e.Values("recipyName").ToString()
 
-        Response.Write("The record ")
-        Response.Write("<span class=deletedrecipehighlight>")
-        Response.Write(delRecipe)
-        Response.Write("</span> has been deleted form the database.")
+        lbldelRecipe.Text = "The record <span class=deletedrecipehighlight> " & delRecipe & "</span> has been deleted form the database."
 
-        Response.AddHeader("REFRESH", "5;URL=./gridview.aspx")
+
+        'Response.Write("The record ")
+        'Response.Write("<span class=deletedrecipehighlight>")
+        'Response.Write(delRecipe)
+        'Response.Write("</span> has been deleted form the database.")
+
+        Response.AddHeader("REFRESH", "2;URL=./gridview.aspx")
 
         'MsgBox("The record has been deleted from the database.")
 
@@ -22,10 +25,6 @@ Partial Class DetailsView
 
         Response.Redirect("./gridview.aspx")
 
-
-    End Sub
-
-    Protected Sub DetailsView1_PageIndexChanging(sender As Object, e As DetailsViewPageEventArgs) Handles DetailsView1.PageIndexChanging
 
     End Sub
 

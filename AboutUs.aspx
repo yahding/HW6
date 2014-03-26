@@ -9,7 +9,7 @@
 </head>
 <body> 
 
-    <form runat="server">
+    <form id="Form1" runat="server">
     <div id="wrap" style="text-align:center">
     <div id="header">
         <h1 class="title"> <a href="Default.aspx"> Wicked Easy Recipes </a></h1>
@@ -34,7 +34,9 @@
     </div>
 
         <div id="footer">
-         <p> &copy; 2014 &nbsp;Yahong Ding &nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
+
+         <p> &copy;2014 &nbsp;Yahong Ding &nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
+        
         </div>
 
      </div>

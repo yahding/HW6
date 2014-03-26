@@ -54,13 +54,18 @@
         <br />
         <center>
         
-      </center><asp:GridView ID="GridView1" runat="server" CSSClass="gv" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="RecipyDataSource" Width="946px" AllowSorting="True" AllowPaging="True">
+      <asp:GridView ID="GridView1" runat="server" CSSClass="gv" 
+          AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="RecipyDataSource" 
+          Width="946px" AllowSorting="True" AllowPaging="True"
+          Gridlines="None">
             <Columns>
                 <asp:BoundField DataField="recipyName" HeaderText="Recipe Name" SortExpression="recipyName" />
                 <asp:BoundField DataField="subBy" HeaderText="Submitted By" SortExpression="subBy" />
                 <asp:HyperLinkField HeaderText="Detail View" SortExpression="ID" Text="Select" DataNavigateUrlFields="ID" DataNavigateUrlFormatString="DetailsView.aspx?ID={0}" />
             </Columns>
         </asp:GridView>
+
+        </center>
     </div>
     <br />
         <br />

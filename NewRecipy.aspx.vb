@@ -6,7 +6,5 @@ Partial Class DetailsView
 
         Response.Redirect("./gridview.aspx")
 
-        lblCopyN.Text = DateTime.Now.Year
-
     End Sub
 End Class
