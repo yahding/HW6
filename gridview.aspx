@@ -5,12 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Yahong Ding</title>
-            <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+
+      <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+
 </head>
 <body>
     <form runat="server">
     <div id="wrap" style="text-align:center">
-        <h1 class="title"> Wicked Easy Recipes </h1>
+        <h1 class="title"> <a href="Default.aspx"> Wicked Easy Recipes </a></h1>
            <h3>Using 5 Ingedients or Less!</h3>
     <div id="nav">
 
@@ -51,18 +53,21 @@
     
         <br />
         <center>
-        <asp:GridView ID="GridView1" runat="server" CSSClass="gv" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="RecipyDataSource" Width="946px" AllowSorting="True" AllowPaging="True">
+        
+      </center><asp:GridView ID="GridView1" runat="server" CSSClass="gv" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="RecipyDataSource" Width="946px" AllowSorting="True" AllowPaging="True">
             <Columns>
                 <asp:BoundField DataField="recipyName" HeaderText="Recipe Name" SortExpression="recipyName" />
                 <asp:BoundField DataField="subBy" HeaderText="Submitted By" SortExpression="subBy" />
                 <asp:HyperLinkField HeaderText="Detail View" SortExpression="ID" Text="Select" DataNavigateUrlFields="ID" DataNavigateUrlFormatString="DetailsView.aspx?ID={0}" />
             </Columns>
         </asp:GridView>
-      </center>
     </div>
-    
+    <br />
+        <br />
+
+        <asp:Label ID="lblDate" runat="server" Text=""></asp:Label>
         <div id="footer">
-         <p>©&nbsp;2014.&nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
+         <p> &copy; <asp:Label ID="lblCopy" runat="server" Text=""></asp:Label>&nbsp;Yahong Ding &nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
 
        </div>
 

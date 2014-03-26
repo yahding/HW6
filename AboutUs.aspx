@@ -12,7 +12,7 @@
     <form runat="server">
     <div id="wrap" style="text-align:center">
     <div id="header">
-        <h1 class="title"> Wicked Easy Recipes </h1>
+        <h1 class="title"> <a href="Default.aspx"> Wicked Easy Recipes </a></h1>
         <h3>Using 5 Ingedients or Less!</h3>
     </div>
     <div id="nav">
@@ -34,7 +34,7 @@
     </div>
 
         <div id="footer">
-         <p>©&nbsp;2014.&nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
+         <p> &copy; 2014 &nbsp;Yahong Ding &nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
         </div>
 
      </div>
