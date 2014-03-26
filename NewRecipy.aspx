@@ -11,17 +11,16 @@
     <form runat="server">
     <div id="wrap" style="text-align:center">
     <div id="header">
-        <h1 class="title"> Wicked Easy Recipies </h1>
+        <h1 class="title"> Wicked Easy Recipes </h1>
           <h3>Using 5 Ingedients or Less!</h3>
     </div>
-    <div id="nav">
-        <br />
-          <a href="gridview.aspx">Home</a>
-          <a href="NewRecipy.aspx"> New Recipy</a>
-          <a href="AboutUs.aspx"> About Us</a>
-          <a href="Contact.aspx"> Contact </a>
-    </div>
 
+        <div id="nav">
+          <a href="gridview.aspx">Home</a>&nbsp; |&nbsp; 
+        <a href="NewRecipy.aspx">New Recipe</a>&nbsp; |&nbsp; 
+        <a href="AboutUs.aspx">About Us</a>&nbsp; |&nbsp; 
+        <a href="Contact.aspx">Contact </a>
+    </div>
    
     <div>
     
@@ -55,24 +54,31 @@
         </asp:SqlDataSource>
         <br />
         <center>
-        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Height="50px" Width="444px" DefaultMode="Insert">
+        <asp:DetailsView ID="DetailsView1" runat="server" CSSClass="cc" AllowPaging="True" AlternatingRowStyle-CssClass="alt" ItemStyle-Width="65%"
+            AutoGenerateRows="False" AutoGenerateColumns="False"  DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="444px" DefaultMode="Insert">
+            <AlternatingRowStyle CssClass="alt" />
             <Fields>
-                <asp:BoundField DataField="recipyName" HeaderText="Recipy Name" SortExpression="recipyName" />
-                <asp:BoundField DataField="subBy" HeaderText="Submitted By" SortExpression="subBy" />
-                <asp:BoundField DataField="ing1" HeaderText="Ingredient #1" SortExpression="ing1" />
-                <asp:BoundField DataField="ing2" HeaderText="Ingredient #2" SortExpression="ing2" />
-                <asp:BoundField DataField="ing3" HeaderText="Ingredient #3" SortExpression="ing3" />
-                <asp:BoundField DataField="ing4" HeaderText="Ingredient #4" SortExpression="ing4" />
-                <asp:BoundField DataField="ing5" HeaderText="Ingredient #5" SortExpression="ing5" />
-                <asp:BoundField DataField="prep" HeaderText="Preparation" SortExpression="prep" />
-                <asp:BoundField DataField="note" HeaderText="Note" SortExpression="note" />
+                <asp:BoundField DataField="recipyName" ItemStyle-CssClass="textright"  HeaderText="Recipe Name" SortExpression="recipyName" />
+                <asp:BoundField DataField="subBy" ItemStyle-CssClass="textright" HeaderText="Submitted By" SortExpression="subBy" />
+                <asp:BoundField DataField="ing1" ItemStyle-CssClass="textright" HeaderText="Ingredient #1" SortExpression="ing1" />
+                <asp:BoundField DataField="ing2" ItemStyle-CssClass="textright" HeaderText="Ingredient #2" SortExpression="ing2" />
+                <asp:BoundField DataField="ing3" ItemStyle-CssClass="textright" HeaderText="Ingredient #3" SortExpression="ing3" />
+                <asp:BoundField DataField="ing4" ItemStyle-CssClass="textright"  HeaderText="Ingredient #4" SortExpression="ing4" />
+                <asp:BoundField DataField="ing5" ItemStyle-CssClass="textright" HeaderText="Ingredient #5" SortExpression="ing5" />
+                <asp:BoundField DataField="prep" ItemStyle-CssClass="textright" HeaderText="Preparation" SortExpression="prep" />
+                <asp:BoundField DataField="note" ItemStyle-CssClass="textright" HeaderText="Note" SortExpression="note" />
                 <asp:CommandField ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>
         </center>
-        <br />
-    
+       
     </div>
+       <div id="footer">
+         <p>©&nbsp;2014.&nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
+
+       </div>
+
+
     </div>
     </form>
 </body>

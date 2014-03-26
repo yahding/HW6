@@ -12,17 +12,17 @@
     <form runat="server">
     <div id="wrap" style="text-align:center">
     <div id="header">
-        <h1 class="title"> Wicked Easy Recipies </h1>
+        <h1 class="title"> Wicked Easy Recipes </h1>
         <h3>Using 5 Ingedients or Less!</h3>
     </div>
     <div id="nav">
         
-        <br />
-                 <a href="gridview.aspx">Home</a>
-                 <a href="NewRecipy.aspx"> New Recipy</a>
-                 <a href="AboutUs.aspx"> About Us</a>
-                 <a href="Contact.aspx"> Contact </a>
-
+             <a href="gridview.aspx">Home</a>&nbsp; |&nbsp; 
+             <a href="NewRecipy.aspx">New Recipe</a>&nbsp; |&nbsp; 
+             <a href="AboutUs.aspx">About Us</a>&nbsp; |&nbsp; 
+             <a href="Contact.aspx">Contact </a>
+    </div>
+    <div id="nava">
       <p style="height: 180px; width: 500px;margin-left:280px">
             &nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit.&nbsp;Nulla&nbsp; aliquet,&nbsp;tellus&nbsp;sit&nbsp;amet&nbsp;feugiat&nbsp;euismod,&nbsp;velit&nbsp;lectus&nbsp; pellentesque&nbsp;nisi,&nbsp;non&nbsp;eleifend&nbsp;quam&nbsp;ipsum&nbsp;at&nbsp;arcu.&nbsp;Sed semper&nbsp;mi&nbsp;a&nbsp;tristique&nbsp;porttitor.&nbsp;Morbi&nbsp;rhoncus&nbsp;diam&nbsp;dui,&nbsp;a&nbsp; ultricies&nbsp;eros&nbsp;mollis&nbsp;sed.&nbsp;Donec&nbsp;facilisis&nbsp;blandit&nbsp;elit&nbsp;ut&nbsp;ultrices.&nbsp; Nullam&nbsp;laoreet&nbsp;volutpat&nbsp;dolor&nbsp;in&nbsp;convallis.&nbsp;Ut&nbsp;ornare&nbsp;mollis&nbsp;odio&nbsp; at&nbsp;luctus.&nbsp;Morbi&nbsp;nec&nbsp;blandit&nbsp;justo.&nbsp;Donec&nbsp;porta&nbsp;sagittis&nbsp;euismod.&nbsp; Cras&nbsp;quis&nbsp;congue&nbsp;dui.&nbsp;Nunc&nbsp;at&nbsp;lorem&nbsp;ac&nbsp;diam&nbsp;vestibulum&nbsp; placerat&nbsp;quis&nbsp;eu&nbsp;nibh.&nbsp;In&nbsp;hac&nbsp;habitasse&nbsp;platea&nbsp;dictumst.</p>
         
@@ -32,6 +32,11 @@
         </p>
        
     </div>
+
+        <div id="footer">
+         <p>©&nbsp;2014.&nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
+        </div>
+
      </div>
     </form>
    

@@ -10,18 +10,16 @@
 <body>
     <form runat="server">
     <div id="wrap" style="text-align:center">
-        <h1 class="title"> Wicked Easy Recipies </h1>
+        <h1 class="title"> Wicked Easy Recipes </h1>
            <h3>Using 5 Ingedients or Less!</h3>
     <div id="nav">
-       
-        <br />
-            <a href="gridview.aspx"> Home </a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="NewRecipy.aspx"> New Recipy </a >&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="AboutUs.aspx"> About Us </a>&nbsp;&nbsp;&nbsp;
-            <a href="Contact.aspx"> Contact </a>
+
+            <a href="gridview.aspx">Home</a>&nbsp; |&nbsp; 
+            <a href="NewRecipy.aspx">New Recipe</a>&nbsp; |&nbsp; 
+            <a href="AboutUs.aspx">About Us</a>&nbsp; |&nbsp; 
+            <a href="Contact.aspx">Contact </a>
     </div>
     <div>
-    
         <asp:SqlDataSource ID="RecipyDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:cs_RecipyWeb %>" DeleteCommand="DELETE FROM [Table] WHERE [ID] = @ID" InsertCommand="INSERT INTO [Table] ([recipyName], [subBy], [ing1], [ing2], [ing3], [ing4], [ing5], [prep], [note]) VALUES (@recipyName, @subBy, @ing1, @ing2, @ing3, @ing4, @ing5, @prep, @note)" SelectCommand="SELECT * FROM [Table]" UpdateCommand="UPDATE [Table] SET [recipyName] = @recipyName, [subBy] = @subBy, [ing1] = @ing1, [ing2] = @ing2, [ing3] = @ing3, [ing4] = @ing4, [ing5] = @ing5, [prep] = @prep, [note] = @note WHERE [ID] = @ID">
             <DeleteParameters>
                 <asp:Parameter Name="ID" Type="Int32" />
@@ -53,15 +51,21 @@
     
         <br />
         <center>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="RecipyDataSource" Width="946px" AllowSorting="True" AllowPaging="True">
+        <asp:GridView ID="GridView1" runat="server" CSSClass="gv" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="RecipyDataSource" Width="946px" AllowSorting="True" AllowPaging="True">
             <Columns>
-                <asp:BoundField DataField="recipyName" HeaderText="Recipy Name" SortExpression="recipyName" />
+                <asp:BoundField DataField="recipyName" HeaderText="Recipe Name" SortExpression="recipyName" />
                 <asp:BoundField DataField="subBy" HeaderText="Submitted By" SortExpression="subBy" />
-                <asp:HyperLinkField HeaderText="Submitted By" SortExpression="ID" Text="Select" DataNavigateUrlFields="ID" DataNavigateUrlFormatString="DetailsView.aspx?ID={0}" />
+                <asp:HyperLinkField HeaderText="Detail View" SortExpression="ID" Text="Select" DataNavigateUrlFields="ID" DataNavigateUrlFormatString="DetailsView.aspx?ID={0}" />
             </Columns>
         </asp:GridView>
       </center>
     </div>
+    
+        <div id="footer">
+         <p>©&nbsp;2014.&nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development</p>
+
+       </div>
+
     </div>
     </form>
 </body>
