@@ -11,7 +11,7 @@
     <form runat="server">
     <div id="wrap" style="text-align:center">
     <div id="header">
-        <h1 class="title"> Wicked Easy Recipes </h1>
+        <h1 class="title"> <a href="Default.aspx"> Wicked Easy Recipes </a></h1>
           <h3>Using 5 Ingedients or Less!</h3>
     </div>
 
@@ -53,9 +53,25 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+
         <center>
-        <asp:DetailsView ID="DetailsView1" runat="server" CSSClass="cc" AllowPaging="True" AlternatingRowStyle-CssClass="alt" ItemStyle-Width="65%"
-            AutoGenerateRows="False" AutoGenerateColumns="False"  DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="444px" DefaultMode="Insert">
+
+            <asp:Label ID="lbladdRecipe" runat="server" Text=""></asp:Label>
+
+            <asp:Label ID="lblmessageRequired" runat="server" Text=""></asp:Label>
+
+             <br />
+
+        <asp:DetailsView ID="DetailsView1" runat="server" CSSClass="cc" 
+            AlternatingRowStyle-CssClass="alt" 
+            FieldHeaderStyle-CssClass="ccfieldheader"
+            ItemStyle-CssClass="ccitem"
+            PagerStyle-CssClass="ccpager"
+            CommandRowStyle-CssClass="cccommand"
+            AllowPaging="True" 
+            AutoGenerateRows="False" AutoGenerateColumns="False"  
+            DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="500px" 
+            DefaultMode="Insert">
             <AlternatingRowStyle CssClass="alt" />
             <Fields>
                 <asp:BoundField DataField="recipyName" ItemStyle-CssClass="textright"  HeaderText="Recipe Name" SortExpression="recipyName" />

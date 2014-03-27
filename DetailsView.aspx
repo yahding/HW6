@@ -59,23 +59,18 @@
         <br />
 
         <center>
+
             <asp:Label ID="lbldelRecipe" runat="server" Text=""></asp:Label>
 
-
         <asp:DetailsView ID="DetailsView1" runat="server" CSSClass="cc" 
-            Headerstyle-CssClass="ccHeader"
-            FieldHeaderStyle-CssClass="ccFieldHeader"
-            HeaderText="Recipe Details"
+            Headerstyle-CssClass="ccheader"
+            FieldHeaderStyle-CssClass="ccfieldheader"
             ItemStyle-CssClass="ccitem"
             PagerStyle-CssClass="ccpager"
             CommandRowStyle-CssClass="cccommand"
             AlternatingRowStyle-CssClass="alt" AlternatingColumnStyle-CssClass="col" 
             AutoGenerateColumns="False" AllowPaging="True"  AutoGenerateRows="False" 
             DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="500px"
-            
-            
-            
-            
             >
             <Fields>
                 <asp:BoundField DataField="recipyName" HeaderText="Recipe Name" SortExpression="recipyName"   />

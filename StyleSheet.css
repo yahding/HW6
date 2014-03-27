@@ -8,6 +8,7 @@ body {
 
 h3 {font-family:Arial;font-style:normal;font-size:small;
 }
+h5 {font-family:Gill Sans; font-style:normal;font-size:medium}
 a { text-decoration:none; font-weight: normal; }
 a:link, a:visited { color: black }
 a:link  { text-decoration:underline; }	
@@ -65,11 +66,20 @@ a:hover { background-color: #6699FF; text-decoration: underline; }
             margin: 0px;
 }
 
-.cc td { padding: 2px; border: solid 2px #FF9933; color: black; 
-         text-align:right;
-         text-align-last:left;}
 
-.cc a { color: black; text-decoration: none;}
+
+.cc td { padding: 2px; border: solid 2px #FF9933; color: black; font:bold;
+         text-align:left;
+         text-align-last:left;}
+/*Edit the left column of the table*/
+.cc .ccfieldheader {color:#330033;width:150px;text-align:right;}
 
 .cc .alt { background: #FFFFCC repeat-x ; }
+.cc .cccommand {line-height:20px;}
+/*edit the last line of the table                                              ----          ask question there            ---------*/
+.cc .cccommand td { text-align:center;}
+.cc a { color: black; text-decoration: none;}
+.cc .ccpager {}
+
+
 

@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
     <div id="warp" style="text-align:center">
         <div id="header">
-        <h1 class="title"> Welcome to our recipe database. </h1><br />
+        <h1 class="title"> Welcome to Wicked Easy Recipes. </h1><br />
 
         </div>
     <div id="nav">
